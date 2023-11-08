@@ -530,6 +530,10 @@ footer{
         margin-bottom: -10em;
     }
 
+    .treneri-item{
+        flex-direction: column;
+    }
+
     .aktuality-text{
         font-size: small;
     }
