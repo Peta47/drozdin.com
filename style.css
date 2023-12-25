@@ -216,7 +216,7 @@ a:hover{
 }
 
 .aktuality-item:hover, .aktuality-another:hover {
-    transform: scale(1.1);
+    transform: scale(1.01);
     cursor: pointer;
 }
 
@@ -474,6 +474,10 @@ footer{
 }
 
 @media (max-width: 800px){
+    .dropdown{
+        display: none;
+    }
+
     .navigation{
         position: fixed;
         left: -100%;
