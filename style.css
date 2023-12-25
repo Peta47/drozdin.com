@@ -478,6 +478,10 @@ footer{
         display: none;
     }
 
+    .dokument > p {
+        font-size: 1em;
+    }
+
     .navigation{
         position: fixed;
         left: -100%;
