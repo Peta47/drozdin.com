@@ -170,6 +170,7 @@ a:hover{
 .line{
     width: 100%;
     margin-bottom: -.2em;
+    max-width: max-content;
 }
 /*konec linky*/
 
@@ -411,7 +412,6 @@ footer{
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
-
 }
 
 .footer-item{
@@ -429,12 +429,15 @@ footer{
         margin: 0 3em;
     }
 
-    .header-item-right{
-        display: none;
-    }
 
     .header-item{
         margin: auto;
+    }
+}
+
+@media (max-width: 1150px){
+    .header-item-right{
+        display: none;
     }
 }
 
@@ -525,6 +528,10 @@ footer{
         -webkit-transform: translateY(-8px) rotate(-45deg);
         transform: translateY(-8px) rotate(-45deg);
     }
+
+    footer{
+        flex-direction: column;
+    }
 }
 
 
@@ -540,6 +547,7 @@ footer{
 
     .treneri-item{
         flex-direction: column;
+        max-width: 20em;
     }
 
     .aktuality-text{
@@ -553,5 +561,9 @@ footer{
     .footer-item > p {
         margin-block-end: 0;
         margin-block-start: 0;
+    }
+
+    .treneri-part > h3{
+        font-size: 1em;
     }
 }
