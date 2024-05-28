@@ -37,7 +37,7 @@ h2{
 .shade{
         width: 100%;
     height: 99%;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     position: absolute;
     top: 0;
     left: 0;
@@ -139,11 +139,11 @@ header{
 
 a{
     text-decoration: none;
-    color: #333638;
+    color: #292727;
 }
 
 a:hover{
-    color: #68b604;
+    color: #030500;
 }
 
 
@@ -200,7 +200,7 @@ a:hover{
 
 .aktuality-item{
     position: relative;
-    margin-top: 1EM;
+    margin-top: 1em;
 }
 
 .aktuality-item-past{
@@ -214,7 +214,10 @@ a:hover{
     width: 100%;
     position: relative;
     z-index: -1;
+    max-height: 640px;
 }
+
+
 
 .aktuality-item:hover, .aktuality-another:hover {
     transform: scale(1.01);
@@ -241,6 +244,22 @@ a:hover{
 .aktuality-another:hover{
     background-color: #949ca4;
 }
+
+
+/*aktuality-page*/
+
+.aktuality-page{
+    display: flex;
+    gap: 1em;
+    margin: 1em;
+    
+}
+
+.aktuality-page-img{
+    max-width: 50%;
+    border-radius: 1em;
+}
+
 
 
 
@@ -543,6 +562,18 @@ footer{
         height: 50vh;
         margin-top: 2em;
         margin-bottom: -10em;
+    }
+
+    .aktuality-page{
+        flex-direction: column;
+    }
+
+    .aktuality-page > div > h2{
+        margin-top: 0;
+    }
+
+    .aktuality-page-img{
+        max-width: 100%;
     }
 
     .treneri-item{

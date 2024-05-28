@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="bg-color nav-bar">
+        <header class="max-width">
+            <div class="header-item header-item-right">
+                <a href="index.html">
+                    <img class="header-logo" src="../logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header-item">
+                <nav>
+                    <ul class="navigation">
+                        <li class="navigation-item"><a href="../index.html" class="nav-link">AKTUALITY</a></li>
+                        <li class="navigation-item"><a href="../kategorie.html" class="nav-link">KATEGORIE</a>
+                            <div class="dropdown">
+                                <ul class="dropdown-content">
+                                    <li> <a href="muzi.html" class="nav-link">MUŽI</a></li>
+                                    <li> <a href="zeny.html" class="nav-link">ŽENY</a></li>
+                                    <li> <a href="juniori.html" class="nav-link">JUNIOŘI</a></li>
+                                    <li> <a href="dorostenci.html" class="nav-link">DOROSTENCI</a></li>
+                                    <li> <a href="starsi.html" class="nav-link">STARŠÍ ŽÁCI</a></li>
+                                    <li> <a href="mladsi.html" class="nav-link">MLADŠÍ ŽÁCI</a></li>
+                                    <li> <a href="elevove.html" class="nav-link">ELÉVOVÉ</a></li>
+                                    <li> <a href="pripravka.html" class="nav-link">PŘÍPRAVKA</a></li>
+                                    <li> <a href="zs.html" class="nav-link">ZÁKLADNÍ ŠKOLY</a></li>
+                                    <li> <a href="klic.html" class="nav-link">KLÍČ</a></li>
+                                    <li> <a href="modelar.html" class="nav-link">MODELÁŘ</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="navigation-item"><a href="../nabor.html" class="nav-link">NÁBOR</a></li>
+                        <li class="navigation-item"><a href="../treneri.html" class="nav-link">KONTAKY</a></li>
+                        <li class="navigation-item"><a href="../dokumenty.html" class="nav-link">KE STAŽENÍ</a></li>
+                        <li class="navigation-item"><a href="../ostatni.html" class="nav-link">OSTATNÍ SLUŽBY</a></li>
+                        <li class="navigation-item"><a href="../sponzor.html" class="nav-link">SPONZOŘI</a></li>
+                        <a href="https://www.facebook.com/profile.php?id=100044358888732" class="nav-link"><li class="fb-logo navigation-item"><img class="fb-logo-img" src="../facebook-circle.svg" alt="fb-logo"></li></a>
+                    </ul>
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <svg class="line" height="10" width="2000" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0" y1="10" x2="2000" y2="10" stroke="black" />
+        </svg>
+    </div>
+    <main>
+        <div class="max-width">
+            <div class="aktuality-page">
+                
+                <img class="aktuality-page-img" src="../foto/aktuality5.jpg" alt="">
+                 
+                <div>
+                    <h2>Turnaj ZŠ 12.5.2024</h2>
+                    <p>Kluci ze ZŠ Petřkova a ZŠ Droždín spojili síly a vyrazili na turnaj.</p>
+                </div>      
+
+            </div>
+        </div>
+
+    </main>
+    <svg class="line" height="10" width="2000" xmlns="http://www.w3.org/2000/svg">
+        <line x1="0" y1="10" x2="2000" y2="10" stroke="black" />
+    </svg>
+    <footer class="max-width">
+            <div class="footer-item">
+                <p class="important-text">Kontaktujte nás:</p>
+                <p>Tel.: <span class="important-text">+420 723 644 458</span></p>
+                <p>E-mail: <span class="important-text">fbcdrozdin@gmail.com</span></p>
+                <p>Facebook: <span class="important-text">FBC Droždín</span></p>
+            </div>
+            <div class="footer-item">
+                <p>&copy Petr Dosedel - web developer</p>
+            </div>
+            <div class="footer-item">
+                <p class="important-text">FBC Droždín - Sportovně-volnočasový florbalový klub</p>
+                <p>Gagarinova 96/15</p>
+                <p>779 00 Olomouc – Droždín</p>
+                <p>IČ: 22897470, DIČ: CZ22897470</p>
+                <p>Bankovní spojení: <span class="important-text"> 257922860/0300</span></p>
+            </div>    
+    </footer>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".navigation");
+        const navLink = document.querySelectorAll(".nav-link");
+
+        hamburger.addEventListener("click", mobileMenu);
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+
+        function closeMenu() {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }
+    </script>
+</body>
+</html>
