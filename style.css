@@ -476,16 +476,19 @@ footer{
         background-color: #68b604;
         padding: 1em;
         border-radius: .5em;
-        margin: 0;
+        margin: 0em;
+    }
+
+    a{
+        padding: 0;
     }
 
     a:hover{
         color: #fff;
     }
 
-    .navigation-item:last-child{
-        padding: 0;
-        justify-content: center;
+    .fb-logo{
+        padding: 1em; 
     }
 
     .navigation-item::after{
@@ -497,7 +500,7 @@ footer{
     }
 
 }
-
+/*mobil*/
 @media (max-width: 800px){
     .dropdown{
         display: none;
@@ -531,6 +534,16 @@ footer{
         overflow-y: auto;
     }
 
+    a{
+        padding: 0em 50%;
+    }
+
+    .fb-logo-navlink{
+        padding: 0;
+    }
+
+
+
     .hamburger{
         display: block;
         position: relative;
@@ -558,7 +571,6 @@ footer{
 
 
 
-/*mobiles*/
 @media (max-width: 599px){
     .main-photo-web{
         background-size: 100% 60%;
