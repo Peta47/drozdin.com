@@ -397,7 +397,7 @@ h3 span{
 
 .sponzori{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 1em;
 }
 
@@ -534,7 +534,7 @@ footer{
         overflow-y: auto;
     }
 
-    a{
+    li > a{
         padding: 0em 50%;
     }
 
@@ -542,6 +542,9 @@ footer{
         padding: 0;
     }
 
+    .aktuality-item-past{
+        display: block;
+    }
 
 
     .hamburger{
