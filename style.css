@@ -347,6 +347,33 @@ konec linky*/
   transition: all 0.475s;
 }
 
+/*nabor*/
+form{
+    display: flex;
+    justify-content: center;
+}
+
+.nabor-form{
+    display: flex;
+    gap: 2em;
+}
+
+.form-text{
+    margin-bottom: .2em;
+    
+}
+
+.input-long{
+    width: 100%;
+}
+
+.dropdown-category{
+    margin-top: 1em;
+}
+
+.button-submit{
+    margin-top: 1em;
+}
 
 /*ostatni*/
 .ostatni{
@@ -408,6 +435,7 @@ h3 span{
 .sponzori-item{
     display: flex;
     flex-direction: column;
+    max-width: 75%;
 }
 
 
@@ -539,9 +567,6 @@ footer{
         overflow-y: auto;
     }
 
-    li > a{
-        padding: 0em 50%;
-    }
 
     .fb-logo-navlink{
         padding: 0;

@@ -35,7 +35,7 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="navigation-item"><a href="nabor.html" class="nav-link">NÁBOR</a></li>
+                        <!--<li class="navigation-item"><a href="nabor.html" class="nav-link">NÁBOR</a></li>-->
                         <li class="navigation-item"><a href="treneri.html" class="nav-link">KONTAKY</a></li>
                         <li class="navigation-item"><a href="dokumenty.html" class="nav-link">KE STAŽENÍ</a></li>
                         <li class="navigation-item"><a href="ostatni.html" class="nav-link">OSTATNÍ SLUŽBY</a></li>
@@ -56,7 +56,42 @@
         <section>
             <div class="max-width">
                 <h2>NÁBOR</h2>
-                <h3>!!!Stránka ve vývoji!!!</h3>
+                <form action="/nabor_page.php">
+                    <div class="nabor-form-struct">
+                        <div class="nabor-form">
+                            <div class="nabor-form-item">
+                                <p class="form-text">Jméno</p>
+                                <input type="text">
+                            </div>
+                            <div class="nabor-form-item">
+                                <p class="form-text">Přijmení</p>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <p class="form-text">Email</p>
+                        <input type="text" class="input-long">
+                        <div class="dropdown-category">
+                            <label for="kategorie">Kategorie hráče:</label>
+                            <select name="kategorie" id="kategorie">
+                                <option value="muzi">Muži</option>
+                                <option value="zeny">Ženy</option>
+                                <option value="juniori">Junioři</option>
+                                <option value="dorostenci">Dorostenci</option>
+                                <option value="starsi_zaci">Starší žáci</option>
+                                <option value="mladsi_zaci">Mladší žáci</option>
+                                <option value="elevove">Elévové</option>
+                                <option value="pripravka">Přípravka</option>
+                                <option value="zakladni_skoly">Základní školy</option>
+                                <option value="klic">Klíč</option>
+                                <option value="modelar">Modelář</option>
+                            </select>
+                        </div>   
+                        <input class="button-submit" type="submit">          
+                    </div>
+
+
+
+                </form>
             </div>
         </section>
     </main>
